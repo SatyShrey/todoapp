@@ -24,12 +24,13 @@ h1{
     margin: 20px 0px;
     border-bottom: 2px dashed black;
     padding-bottom: 10px;
+    flex-direction:column;
 }
 
 .inputDiv button{
     padding: 4px;
-    width: 60px;
-    height: 50px;
+    width: 70px;
+    height: 40px;
     align-self: end;
     color: green;
 }
