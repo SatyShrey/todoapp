@@ -82,7 +82,7 @@ button:active{
 #notes{
     text-align: center;
 }
-·noteCard button{
+.noteCard button{
   padding:2px;
   width: 20%;
 }
