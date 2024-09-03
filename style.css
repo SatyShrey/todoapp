@@ -79,3 +79,6 @@ button:active{
     font-size: smaller;
     color: white;
 }
+#notes{
+    text-align: center;
+}
