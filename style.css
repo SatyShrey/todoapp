@@ -13,6 +13,10 @@ body{
 header{
     background-color: black;
     color: white;
+    padding: 4px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
 }
 h1{
     padding: 10px;
@@ -20,20 +24,20 @@ h1{
 
 .inputDiv{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin: 20px 0px;
-    border-bottom: 2px dashed black;
-    padding-bottom: 10px;
-    flex-direction:column;
-    align-items:center;
+    align-items: center;
+    margin-top: 40px;
+    padding: 10px;
 }
 
 .inputDiv button{
-    padding: 4px;
-    width: 70px;
+    width: 60px;
     height: 40px;
-    align-self: center;
-    color: green;
+}
+
+.inputDiv button:hover{
+    color: blue;
 }
 
 button{
@@ -64,12 +68,13 @@ button:active{
     background-color: black;
     padding: 3px;
     width: 300px;
+    max-width: 97vw;
     text-align: center;
 }
 
 .note{
     font-size: large;
-    height: 300px;
+    height: 200px;
     background-color: white;
     overflow-y: scroll;
     scrollbar-width: none;
@@ -84,7 +89,20 @@ button:active{
 #notes{
     text-align: center;
 }
-.noteCard button{
-  padding:2px;
-  width: 20%;
+.screenError{
+    display: none;
+}
+@media screen and (max-width:250px) {
+    .screenError{
+        display: block;
+        color: red;
+        background-color: black;
+        padding: 2px;
+    }
+    .container{
+        display: none;
+    }
+    header{
+        display: none;
+    }
 }

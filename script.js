@@ -40,7 +40,7 @@ inputButton.addEventListener('click',()=>{
                         var div=document.createElement('div');
                         div.setAttribute('class','noteCard');
                         div.innerHTML=`<p class='note'>${note.Text}</p>
-                        <p class="time">Created in:${note.Date},${note.Time}</p>
+                        <p class="time">Created on:${note.Date},${note.Time}</p>
                         <button class='delete' onclick='Delete(${note.id})'>❌</button>
                         <button class='edit' onclick="Edit(${note.id})">🖋️</button>
                         `;
@@ -64,7 +64,7 @@ function Delete(a){
                     var div=document.createElement('div');
                     div.setAttribute('class','noteCard');
                     div.innerHTML=`<p class='note'>${note.Text}</p>
-                    <p class="date">Created in:${note.Date},${note.Time}</p>
+                    <p class="time">Created on:${note.Date},${note.Time}</p>
                     <button class='delete' onclick='Delete(${note.id})'>❌</button>
                     <button class='edit' onclick="Edit(${note.id})">🖋️</button>
                     `;
