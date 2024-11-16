@@ -6,8 +6,8 @@ function HomePage(){
 
   const [notes, setNotes] = useState([])
   const [newNote, setNewNote] = useState({ txt: '', id: '',email:''})
-  //let url = "https://todo-8845.onrender.com/"
-       let url="http://127.0.0.1:6060/"
+       let url = "https://todo-8845.onrender.com/"
+       //let url="http://127.0.0.1:6060/"
   const {setErr,email}=useContext(API)
 
   function add(e){
