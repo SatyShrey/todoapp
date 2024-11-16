@@ -7,7 +7,7 @@ export const API=createContext('')
 // eslint-disable-next-line react/prop-types
 export const Provider=({children})=>{
     const [err,setErr]=useState()
-    const[email,setEmail]=useState('satyaxyz31@gmail.com')
+    const[email,setEmail]=useState('')
 
     return (
         <API.Provider value={{

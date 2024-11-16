@@ -7,7 +7,11 @@ import Header from "./Header"
 function App() {
   const{err,email,setEmail}=useContext(API)
 
-  
+  useEffect(()=>{
+    if(sessionStorage.getItem("email")){
+      setEmail(sessionStorage.getItem("email"))
+    }
+  },[setEmail])
    
   return(
     <div className="app">
