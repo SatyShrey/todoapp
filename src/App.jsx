@@ -11,6 +11,7 @@ function App() {
     if(sessionStorage.getItem("email")){
       setEmail(sessionStorage.getItem("email"))
     }
+    console.log('hiiii')
   },[setEmail])
    
   return(
